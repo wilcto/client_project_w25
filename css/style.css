@@ -24,13 +24,6 @@ h2 {
 }
 
 header {
-    /* background-color: #00274C;
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
     background-color: #00274C;
     color: white;
     text-align:center;
@@ -40,14 +33,9 @@ header img {
     width:100%;
     max-width: 250px;
     margin-bottom: 20px;
-    /*height: 60px;*/
 }
 
 nav ul {
-    /*list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;*/
     list-style-type: none;
     padding:0;
     margin: 0;
@@ -55,31 +43,22 @@ nav ul {
 }
 
 nav ul li {
-    /*margin: 0 15px;*/
     margin:0;
     padding:10px;
     border-bottom: 1px solid #ddd;
 }
 
 nav ul li a {
-    /*
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 12px 18px;
-    border-radius: 5px;*/
     text-decoration: none;
     color: white;
     font-weight: bold;
     display: block;
+    font-size: 18px;
     padding: 15px;
 }
 
-nav ul li a:hover, nav ul li a:focus {
-    background-color: #FFCB05;
-    color: #00274C;
-}
-
+nav ul li a:hover, 
+nav ul li a:focus, 
 nav ul li a.active {
     background-color: #FFCB05;
     color: #00274C;
@@ -166,3 +145,39 @@ footer a:hover {
     border-top: none;
     margin-top: 0;
 }
+
+
+/*I got carried away and already started on tablet/desktop view, but I commented it out so it doesn't affect this submission.*/
+
+/*@media screen and (min-width: 768px){
+    header {
+        padding: 15px 20px;
+        text-align: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header img {
+        height: 60px;
+        width: auto;
+        max-width: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        padding: 12px 18px;
+        border-radius: 5px;
+        display: auto;
+    }
+} */
