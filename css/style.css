@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 36px;
+    color: #00274C;
+    text-align: center;
+    margin-top: 0px;
+}
+
+h2 {
+    border-top: 2px solid #000;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #00274C;
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: #00274C;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
+nav ul li a.active {
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
+main {
+    background: white;
+    padding: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ol {
+    padding: 15px;
+    margin-left: 20px;
+}
+
+main ul {
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #00274C;
+    color: white;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #FFCB05;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.skip {
+    position: absolute;
+    top: -999px;
+    left: 0;
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid #00274C;
+    text-decoration: none;
+}
+
+.skip:focus {
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h2{
+    border-top: none;
+    margin-top: 0;
+}
