@@ -10,18 +10,31 @@
 <body>
 
     <header>
-        <a class = "skip" href = "#maincontent">Skip to Main Content</a>
+        <a class="skip" href="#maincontent">Skip to Main Content</a>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <div class= "nav-wrapper">
-            <nav>
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "food_pantry.html" class = "active">Food Pantry</a></li>
-                    <li><a href= "advising.html">Academic Advising</a></li>
-                    <li><a href= "study.html">Central Campus Study Spaces</a></li>
-                </ul>
-            </nav>
+        <div class = "off-screen-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food_pantry.html" class="active">Food Pantry</a></li>
+                <li><a href="advising.html">Academic Advising</a></li>
+                <li><a href="study.html">Central Campus Study Spaces</a></li>
+            </ul>
         </div>
+        <nav class = "ham-nav">
+            <div class = "ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food_pantry.html" class="active">Food Pantry</a></li>
+                <li><a href="advising.html">Academic Advising</a></li>
+                <li><a href="study.html">Central Campus Study Spaces</a></li>
+            </ul>
+        </nav>
     </header>
     <main id="maincontent">
         <h1>Food Pantry</h1>
@@ -53,8 +66,20 @@
         </div>
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p>MSI Academic Advising <span id="year"></span> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
     </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+
+        const hamMenu = document.querySelector('.ham-menu');
+        const offScreenMenu = document.querySelector('.off-screen-menu');
+
+        hamMenu.addEventListener('click', function () {
+            hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+        });
+    </script>
     
 </body>
 
