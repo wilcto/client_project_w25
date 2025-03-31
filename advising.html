@@ -8,20 +8,19 @@
     <title>BSI Academic Advising</title>
 </head>
 <body>
-
     <header>
-        <a class="skip" href="#maincontent">Skip to Main Content</a>
+        <a class="skip" href="#maincontent" tabindex=1>Skip to Main Content</a>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <div class = "off-screen-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="food_pantry.html">Food Pantry</a></li>
-                <li><a href="advising.html" class="active">Academic Advising</a></li>
-                <li><a href="study.html">Central Campus Study Spaces</a></li>
+                <li><a href="index.html" tabindex=3>Home</a></li>
+                <li><a href="food_pantry.html" tabindex=4>Food Pantry</a></li>
+                <li><a href="advising.html" class="active" tabindex=5>Academic Advising</a></li>
+                <li><a href="study.html"  tabindex=6>Central Campus Study Spaces</a></li>
             </ul>
         </div>
         <nav class = "ham-nav">
-            <div class = "ham-menu">
+            <div class = "ham-menu" tabindex=2>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -74,7 +73,16 @@
 
         hamMenu.addEventListener('click', function () {
             hamMenu.classList.toggle('active');
+            offScreenMenu.style.display = "flex";
             offScreenMenu.classList.toggle('active');
+        });
+
+        hamMenu.addEventListener('keydown', function (event){
+            if (event.key === "Enter"){
+                hamMenu.classList.toggle('active');
+                offScreenMenu.style.display = "flex";
+                offScreenMenu.classList.toggle('active');
+            }
         });
     </script>
     

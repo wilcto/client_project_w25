@@ -164,7 +164,7 @@ footer a:hover {
     position:fixed;
     top:0;
     right: -999px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -221,6 +221,11 @@ footer a:hover {
 .ham-menu:hover{
     cursor: pointer;
 }
+
+.ham-menu:focus {
+    outline: 1px dotted #212121;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
 
 .ham-menu span{
     height: 5px;
