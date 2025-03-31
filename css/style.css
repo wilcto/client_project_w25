@@ -147,8 +147,6 @@ footer a:hover {
 }
 
 
-/*I got carried away and already started on tablet/desktop view, but I commented it out so it doesn't affect this submission.*/
-
 @media screen and (min-width: 768px){
     header {
         padding: 15px 20px;
